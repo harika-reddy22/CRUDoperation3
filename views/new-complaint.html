@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint | Harika Resolve</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/complaint.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="complaint-header">
+    <a href="/" class="complaint-brand">
+        <span class="brand-logo">HR</span>
+        <span>
+            <strong>HARIKA RESOLVE</strong>
+            <small>Report. Track. Resolve.</small>
+        </span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/complaints/new" class="active">Submit Complaint</a>
+        <a href="/my-complaints">My Complaints</a>
+        <a href="/profile">Profile</a>
+    </nav>
+
+    <a href="/logout" class="back-link">Log Out ↗</a>
+</header>
+
+
+<main class="complaint-container">
+
+    <section class="complaint-intro">
+        <p class="eyebrow">WE ARE HERE TO LISTEN</p>
+        <h1>Raise Your Concern.</h1>
+        <p>Tell us what happened. Your complaint will be recorded and reviewed by the concerned team.</p>
+    </section>
+   <section class="complaint-image">
+    <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+        alt="Team working together to address concerns">
+    <div class="complaint-image-text">
+        <h2>Your Voice Matters.</h2>
+        <p>Every concern is a step towards positive change.</p>
+    </div>
+</section>
+    <section class="complaint-form-card">
+
+        <div class="form-heading">
+            <h2>Complaint Details</h2>
+            <p>Please provide accurate information below.</p>
+        </div>
+
+        <form action="/complaints" method="POST">
+
+            <div class="form-group">
+                <label for="subject">Complaint Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter a short subject"
+                    maxlength="150"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Complaint Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Academic">Academic</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Hostel">Hostel</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Administration">Administration</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Describe Your Complaint</label>
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="6"
+                    placeholder="Explain your concern in detail..."
+                    required></textarea>
+            </div>
+
+            <div class="form-note">
+                Your complaint will be submitted privately to the system.
+            </div>
+
+            <button type="submit" class="submit-complaint">
+                Submit Complaint →
+            </button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="dashboard-footer">
+    © 2026 Harika Resolve. All Rights Reserved.
+</footer>
+
+</body>
+</html>

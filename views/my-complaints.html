@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Complaints | Harika Resolve</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/my-complaints.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="complaints-header">
+    <a href="/" class="complaint-brand">
+        <span class="brand-logo">HR</span>
+        <span>
+            <strong>HARIKA RESOLVE</strong>
+            <small>Report. Track. Resolve.</small>
+        </span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/complaints/new">Submit Complaint</a>
+        <a href="/my-complaints" class="active">My Complaints</a>
+        <a href="/profile">Profile</a>
+    </nav>
+
+    <a href="/logout" class="back-link">Log Out ↗</a>
+</header>
+
+<main class="complaints-container">
+
+    <section class="complaints-intro">
+        <p class="eyebrow">YOUR COMPLAINT HISTORY</p>
+        <h1>My Complaints</h1>
+        <p>Keep track of every concern you've submitted.</p>
+    </section>
+    <section class="complaints-image">
+    <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+        alt="Tracking and reviewing complaint progress">
+    <div class="complaints-image-text">
+        <h2>Your Concerns, Within Reach.</h2>
+        <p>Follow every update and stay informed about your complaints.</p>
+    </div>
+</section>
+  <section class="complaint-image">
+    <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+        alt="Team working together to resolve concerns">
+    <div class="complaint-image-text">
+        <h2>Your Voice Matters.</h2>
+        <p>Share your concern. Take the first step towards a solution.</p>
+    </div>
+</section>
+    <div class="complaints-toolbar">
+        <h2>Submitted Complaints</h2>
+        <a href="/complaints/new" class="new-complaint-btn">+ New Complaint</a>
+    </div>
+
+    <div id="complaintList" class="complaint-list">
+        <p class="loading">Loading your complaints...</p>
+    </div>
+
+</main>
+
+<footer class="dashboard-footer">
+    © 2026 Harika Resolve. All Rights Reserved.
+</footer>
+
+<script src="/js/my-complaints.js"></script>
+</body>
+</html>

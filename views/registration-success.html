@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful | Harika Resolve</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .success-page {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 20px;
+            background: #f7f4ec;
+        }
+
+        .success-card {
+            max-width: 520px;
+            width: 100%;
+            padding: 45px 35px;
+            text-align: center;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(16, 45, 38, 0.09);
+        }
+
+        .success-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e6eae1;
+            color: #173d32;
+            border-radius: 50%;
+            font-size: 38px;
+        }
+
+        .success-card h1 {
+            font-family: 'Playfair Display', serif;
+            color: #173d32;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .success-card p {
+            color: #68736d;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .success-btn {
+            display: inline-block;
+            padding: 13px 30px;
+            background: #173d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .success-btn:hover {
+            background: #102d26;
+            transform: translateY(-2px);
+        }
+
+        .success-note {
+            display: block;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #929991;
+        }
+
+        @media(max-width: 500px) {
+            .success-card { padding: 35px 22px; }
+            .success-card h1 { font-size: 26px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <a href="/" class="brand">
+            <span class="brand-logo">HR</span>
+            <span>
+                <strong>HARIKA <span>RESOLVE</span></strong>
+                <small>Report. Track. Resolve.</small>
+            </span>
+        </a>
+    </header>
+
+    <main class="success-page">
+        <section class="success-card">
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <h1>Registration Successful!</h1>
+
+            <p>
+                Welcome to Harika Resolve. Your account has been
+                created successfully. You can now log in and
+                start reporting and tracking your concerns.
+            </p>
+
+            <a href="/login" class="success-btn">
+                Login Now <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <span class="success-note">
+                Your voice matters. We're here to help.
+            </span>
+        </section>
+    </main>
+
+    <footer class="dashboard-footer">
+        © 2026 Harika Resolve. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Harika Resolve</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+
+<header class="auth-header">
+    <a href="/" class="brand">
+        <div class="brand-logo">HR</div>
+        <div class="brand-name">
+            <h2>HARIKA <span>RESOLVE</span></h2>
+            <small>Report. Track. Resolve.</small>
+        </div>
+    </a>
+    <a href="/" class="back-link">← Back to Home</a>
+</header>
+
+<main class="auth-layout">
+
+    <section class="auth-visual login-visual">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85" alt="Professional team">
+        <div class="visual-overlay">
+            <span class="eyebrow">YOUR SPACE. YOUR VOICE.</span>
+            <h1>Welcome<br>back.</h1>
+            <p>Sign in to manage your account and stay updated on your complaints.</p>
+        </div>
+    </section>
+
+    <section class="auth-form-section">
+        <div class="auth-form">
+            <span class="eyebrow">WELCOME BACK</span>
+            <h2>Sign in to continue.</h2>
+            <p class="form-description">Enter your registered account details.</p>
+              <div id="login-error" class="login-error" style="display: none;">
+    <span>⚠</span>
+    Incorrect email or password. Please try again.
+</div>
+            <form action="/login" method="POST">
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="auth-submit">Sign In ↗</button>
+            </form>
+
+            <p class="auth-switch">
+                New to Harika Resolve?
+                <a href="/register">Create an account</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="auth-footer">
+    © 2026 Harika Resolve. All Rights Reserved.
+</footer>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const errorBox = document.getElementById('login-error');
+    const loginForm = document.querySelector('form');
+
+    if (params.get('error') === 'invalid') {
+        errorBox.style.display = 'block';
+    }
+
+    loginForm.addEventListener('input', () => {
+        errorBox.style.display = 'none';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+.complaint-header {
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f4ec;
+    border-bottom: 1px solid #e7e1d5;
+}
+
+.complaint-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #173d32;
+}
+
+.complaint-brand strong {
+    display: block;
+    letter-spacing: 1px;
+}
+
+.complaint-brand small {
+    display: block;
+    color: #777;
+    margin-top: 5px;
+}
+
+.back-link {
+    color: #173d32;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.complaint-container {
+    max-width: 850px;
+    margin: 55px auto;
+    padding: 0 22px;
+}
+
+.complaint-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.eyebrow {
+    color: #b69a58;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.complaint-intro h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #173d32;
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+.complaint-intro > p:last-child {
+    color: #777;
+    line-height: 1.7;
+}
+
+.complaint-form-card {
+    background: #fff;
+    border: 1px solid #e7e1d5;
+    padding: 38px;
+}
+
+.form-heading {
+    margin-bottom: 28px;
+}
+
+.form-heading h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #173d32;
+}
+
+.form-heading p {
+    color: #888;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #173d32;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #deded5;
+    background: #fcfbf8;
+    border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #173d32;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-note {
+    background: #e6eae1;
+    padding: 13px;
+    color: #365d4d;
+    font-size: 13px;
+    margin-bottom: 23px;
+}
+
+.submit-complaint {
+    width: 100%;
+    padding: 15px;
+    background: #173d32;
+    color: white;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-complaint:hover {
+    background: #102d26;
+}
+
+@media (max-width: 600px) {
+    .complaint-header {
+        padding: 15px 5%;
+    }
+
+    .complaint-form-card {
+        padding: 22px;
+    }
+
+    .complaint-intro h1 {
+        font-size: 31px;
+    }
+}
+.complaint-image {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 25px 0;
+    background: #173D32;
+}
+
+.complaint-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.48;
+}
+
+.complaint-image-text {
+    position: absolute;
+    left: 28px;
+    bottom: 20px;
+    color: white;
+}
+
+.complaint-image-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.complaint-image-text p {
+    font-size: 13px;
+}
+.complaint-image {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 25px 0;
+    background: #173D32;
+}
+
+.complaint-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.48;
+}
+
+.complaint-image-text {
+    position: absolute;
+    left: 28px;
+    bottom: 20px;
+    color: white;
+}
+
+.complaint-image-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.complaint-image-text p {
+    font-size: 13px;
+}
+/* Main navigation */
+.complaint-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #173D32;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #B69A58;
+}
+
+@media (max-width: 900px) {
+    .main-nav {
+        width: 100%;
+        gap: 12px;
+    }
+}

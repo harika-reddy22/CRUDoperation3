@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Harika Resolve</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-login-body">
+   <div class="admin-login-image">
+    <img
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+        alt="Professional administration workspace">
+</div>
+    <main class="admin-login-card">
+        <a href="/" class="admin-logo">HR</a>
+
+        <p class="admin-eyebrow">HARIKA RESOLVE · MANAGEMENT</p>
+        <h1>Welcome back.</h1>
+        <p class="admin-subtitle">
+            Sign in to access the administration portal.
+        </p>
+
+        <form action="/admin/login" method="POST">
+            <label for="email">Admin Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter admin email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter admin password"
+                required
+            >
+
+            <button type="submit">Sign In to Admin Portal →</button>
+        </form>
+
+        <a href="/" class="return-home">← Return to website</a>
+    </main>
+
+</body>
+</html>

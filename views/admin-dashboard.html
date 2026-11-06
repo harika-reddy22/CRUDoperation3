@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Harika Resolve</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="admin-dashboard-body">
+
+    <aside class="admin-sidebar">
+        <a href="/" class="admin-brand">
+            <span class="admin-logo">HR</span>
+            <span>Harika Resolve</span>
+        </a>
+
+        <p class="sidebar-label">WORKSPACE</p>
+
+        
+<p class="sidebar-label">WORKSPACE</p>
+
+<nav class="admin-nav">
+    <a href="/admin/dashboard" class="active">Overview</a>
+    <a href="#complaints">Complaints</a>
+    <a href="#departments">Departments</a>
+</nav>
+
+<div class="sidebar-bottom">
+    <a href="/" class="site-link">← View Main Website</a>
+
+    <a href="/admin/logout"
+       onclick="return confirm('Are you sure you want to sign out?')">
+        Sign Out ↗
+    </a>
+</div>
+
+
+        <div class="sidebar-bottom">
+    <a href="/" class="site-link">View Website</a>
+
+    <a href="/admin/logout"
+       onclick="return confirm('Are you sure you want to sign out?')">
+        Sign Out
+    </a>
+</div>
+</aside>
+ <main class="admin-main">
+
+        <header class="admin-topbar">
+            <div>
+                <p class="admin-eyebrow">ADMINISTRATION / OVERVIEW</p>
+                <h1>Good to see you.</h1>
+<div class="admin-welcome-image">
+    <img
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+        alt="Professional office workspace"
+    >
+    <div>
+        <h2>Managing Better, Together.</h2>
+        <p>Monitor complaints and make every resolution count.</p>
+    </div>
+</div>
+
+<!-- Dashboard Statistics -->
+                <p class="admin-subtitle">Here's what's happening with your complaints today.</p>
+            </div>
+
+            <div class="admin-profile">
+                <span class="admin-avatar">A</span>
+                <span>Administrator</span>
+            </div>
+        </header>
+
+        <section class="admin-stats">
+
+            <article class="stat-card">
+                <span class="stat-label">Total Complaints</span>
+                <h2 id="adminTotal">0</h2>
+                <p>All submitted complaints</p>
+            </article>
+
+            <article class="stat-card">
+                <span class="stat-label">Pending</span>
+                <h2 id="adminPending">0</h2>
+                <p>Awaiting attention</p>
+            </article>
+
+            <article class="stat-card">
+                <span class="stat-label">Under Review</span>
+                <h2 id="adminReview">0</h2>
+                <p>Currently being reviewed</p>
+            </article>
+
+            <article class="stat-card">
+                <span class="stat-label">Resolved</span>
+                <h2 id="adminResolved">0</h2>
+                <p>Successfully resolved</p>
+            </article>
+
+        </section>
+
+        <section class="admin-section" id="complaints">
+            <div class="section-heading">
+                <div>
+                    <p class="admin-eyebrow">COMPLAINT MANAGEMENT</p>
+                    <h2>Recent Complaints</h2>
+                    <div class="complaint-tools">
+    <input
+        type="search"
+        id="complaintSearch"
+        placeholder="Search by subject or user..."
+    >
+
+    <select id="complaintFilter">
+        <option value="All">All Statuses</option>
+        <option value="Pending">Pending</option>
+        <option value="Under Review">Under Review</option>
+        <option value="Resolved">Resolved</option>
+    </select>
+</div>
+                </div>
+            </div>
+
+           <div class="admin-table-wrapper">
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>COMPLAINT</th>
+                <th>SUBMITTED BY</th>
+                <th>CATEGORY</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+
+        <tbody id="adminComplaintsTable">
+            <tr>
+                <td colspan="7" class="loading-message">
+                    Loading complaints...
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </section>
+    
+<section class="admin-section" id="departments">
+
+    <div class="section-heading">
+        <div>
+            <p class="admin-eyebrow">ORGANIZATION</p>
+            <h2>Department Management</h2>
+            <p class="admin-subtitle">Organize departments and manage their contact information.</p>
+        </div>
+    </div>
+
+    <div class="department-form-card">
+        <h3>Add New Department</h3>
+
+        <form id="departmentForm" class="department-form">
+
+            <div class="form-field">
+                <label for="departmentName">Department Name</label>
+                <input type="text" id="departmentName"
+                       name="department_name"
+                       placeholder="e.g. Infrastructure"
+                       required>
+            </div>
+
+            <div class="form-field">
+                <label for="contactPerson">Contact Person</label>
+                <input type="text" id="contactPerson"
+                       name="contact_person"
+                       placeholder="Enter contact person's name"
+                       required>
+            </div>
+
+            <div class="form-field">
+                <label for="departmentEmail">Email Address</label>
+                <input type="email" id="departmentEmail"
+                       name="email"
+                       placeholder="department@example.com"
+                       required>
+            </div>
+
+            <div class="form-field">
+                <label for="departmentPhone">Phone Number</label>
+                <input type="tel" id="departmentPhone"
+                       name="phone"
+                       placeholder="Enter phone number"
+                       required>
+            </div>
+
+            <button type="submit" class="add-department-btn">
+                + Add Department
+            </button>
+
+            <p id="departmentMessage" role="status"></p>
+
+        </form>
+    </div>
+
+    <div class="department-list-heading">
+        <h3>Registered Departments</h3>
+        <span id="departmentCount">0 Departments</span>
+    </div>
+
+    <div id="departmentList" class="department-list">
+        <p class="loading-message">Loading departments...</p>
+    </div>
+
+</section>
+<!-- Complaint Details Modal -->
+<div id="complaintModal" class="complaint-modal">
+    <div class="complaint-modal-content">
+
+        <div class="modal-header">
+            <div>
+                <p class="admin-eyebrow">COMPLAINT INFORMATION</p>
+                <h2>Complaint Details</h2>
+            </div>
+
+            <button type="button" id="closeComplaintModal"
+                    class="modal-close">&times;</button>
+        </div>
+
+        <div class="modal-details">
+            <p><strong>Complaint ID:</strong> <span id="detailId"></span></p>
+            <p><strong>Subject:</strong> <span id="detailSubject"></span></p>
+            <p><strong>Category:</strong> <span id="detailCategory"></span></p>
+            <p><strong>Submitted By:</strong> <span id="detailUser"></span></p>
+            <p><strong>Email:</strong> <span id="detailEmail"></span></p>
+            <p><strong>Date:</strong> <span id="detailDate"></span></p>
+            <p><strong>Status:</strong> <span id="detailStatus"></span></p>
+
+            <div class="description-box">
+                <strong>Complaint Description</strong>
+                <p id="detailDescription"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+        <footer class="admin-footer">
+            HARIKA RESOLVE · REPORT. TRACK. RESOLVE.
+        </footer>
+
+    </main>
+<script src="/js/admin.js"></script>
+</body>
+</html>

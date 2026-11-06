@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Harika Resolve</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+
+<header class="auth-header">
+    <a href="/" class="brand">
+        <div class="brand-logo">HR</div>
+        <div class="brand-name">
+            <h2>HARIKA <span>RESOLVE</span></h2>
+            <small>Report. Track. Resolve.</small>
+        </div>
+    </a>
+    <a href="/" class="back-link">← Back to Home</a>
+</header>
+
+<main class="auth-layout">
+
+    <section class="auth-visual">
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85" alt="People working together">
+        <div class="visual-overlay">
+            <span class="eyebrow">WELCOME TO HARIKA RESOLVE</span>
+            <h1>Your voice deserves<br>to be heard.</h1>
+            <p>Join us in creating a better and more transparent complaint resolution experience.</p>
+        </div>
+    </section>
+
+    <section class="auth-form-section">
+        <div class="auth-form">
+            <span class="eyebrow">CREATE YOUR ACCOUNT</span>
+            <h2>Join Harika Resolve.</h2>
+            <p class="form-description">Enter your details to get started.</p>
+
+            <form action="/register" method="POST">
+
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Create a password" required minlength="8">
+
+                <button type="submit" class="auth-submit">Create Account ↗</button>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="/login">Sign In</a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="auth-footer">
+    © 2026 Harika Resolve. All Rights Reserved.
+</footer>
+
+</body>
+</html>

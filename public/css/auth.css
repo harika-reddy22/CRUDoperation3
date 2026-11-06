@@ -1,0 +1,180 @@
+
+/* HARIKA RESOLVE - AUTHENTICATION PAGES */
+
+.auth-header {
+    height: 85px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ivory);
+    border-bottom: 1px solid #e9e4d8;
+}
+
+.back-link {
+    font-size: 12px;
+    color: var(--forest);
+}
+
+.auth-layout {
+    min-height: calc(100vh - 135px);
+    padding: 45px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.auth-visual {
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visual-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(
+        transparent 20%,
+        rgba(16, 45, 38, 0.93)
+    );
+    color: white;
+}
+
+.visual-overlay h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.visual-overlay p {
+    font-size: 13px;
+    line-height: 1.9;
+    max-width: 380px;
+    color: #e0e5df;
+}
+
+.auth-form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-form h2 {
+    font-size: 35px;
+    color: var(--forest);
+    margin-bottom: 12px;
+}
+
+.form-description {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.auth-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form label {
+    color: var(--forest);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.auth-form input {
+    height: 48px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD9CE;
+    background: #fffefa;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+}
+
+.auth-form input:focus {
+    border-color: var(--gold);
+}
+
+.auth-submit {
+    height: 50px;
+    background: var(--forest);
+    border: none;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: var(--gold);
+    color: var(--deep);
+}
+
+.auth-switch {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 25px;
+}
+
+.auth-switch a {
+    color: var(--forest);
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.auth-footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--deep);
+    color: #d6ded7;
+    font-size: 11px;
+}
+
+@media(max-width: 800px) {
+    .auth-layout {
+        grid-template-columns: 1fr;
+        padding: 30px 6%;
+    }
+
+    .auth-visual {
+        height: 350px;
+    }
+
+    .visual-overlay h1 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 500px) {
+    .auth-header {
+        padding: 0 5%;
+    }
+
+    .brand-name h2 {
+        font-size: 13px;
+    }
+
+    .auth-form h2 {
+        font-size: 29px;
+    }
+}

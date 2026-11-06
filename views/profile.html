@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Harika Resolve</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/profile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="profile-header">
+    <a href="/" class="profile-brand">
+        <span class="brand-logo">HR</span>
+        <span>
+            <strong>HARIKA RESOLVE</strong>
+            <small>Report. Track. Resolve.</small>
+        </span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/complaints/new">Submit Complaint</a>
+        <a href="/my-complaints">My Complaints</a>
+        <a href="/profile" class="active">Profile</a>
+    </nav>
+
+    <a href="/logout" class="back-link">Log Out ↗</a>
+</header>
+
+
+    <main class="profile-container">
+
+        <section class="profile-intro">
+            <p class="eyebrow">YOUR ACCOUNT</p>
+            <h1>My Profile</h1>
+            <p>Your personal information and registered account details.</p>
+        </section>
+       <section class="profile-image">
+    <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+        alt="People working together">
+    <div class="profile-image-text">
+        <h2>Your Account. Your Voice.</h2>
+        <p>Keep your information updated and stay connected.</p>
+    </div>
+</section>
+        <section class="profile-card">
+
+            <div class="profile-top">
+                <div class="profile-avatar">HR</div>
+                <div>
+                    <p class="eyebrow">REGISTERED MEMBER</p>
+                    <h2 id="profileName">Loading...</h2>
+                    <p id="profileEmail">Please wait...</p>
+                </div>
+            </div>
+
+            <div class="profile-divider"></div>
+
+            <h3>Personal Information</h3>
+
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span>Full Name</span>
+                    <strong id="detailName">Loading...</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Email Address</span>
+                    <strong id="detailEmail">Loading...</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>Phone Number</span>
+                    <strong id="detailPhone">Loading...</strong>
+                </div>
+            </div>
+
+            <div class="profile-footer">
+                <span>Account securely connected to Harika Resolve.</span>
+                <a href="/dashboard">Back to Dashboard →</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        © 2026 Harika Resolve. All Rights Reserved.
+    </footer>
+
+    <script src="/js/profile.js"></script>
+
+</body>
+</html>

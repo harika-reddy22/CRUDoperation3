@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | Harika Resolve</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <a href="/" class="brand">
+        <span class="brand-logo">HR</span>
+        <span>
+            <strong>HARIKA <span>RESOLVE</span></strong>
+            <small>Report. Track. Resolve.</small>
+        </span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/dashboard" class="active">Dashboard</a>
+        <a href="/complaints/new">Submit Complaint</a>
+        <a href="/my-complaints">My Complaints</a>
+        <a href="/profile">Profile</a>
+    </nav>
+
+    <a href="/logout" class="logout-link">Log Out ↗</a>
+</header>
+
+    
+
+    <main class="dashboard-main">
+<section class="dashboard-welcome">
+    <div>
+        <span class="welcome-label">HARIKA RESOLVE • USER PORTAL</span>
+        <h1>Welcome back, <span id="welcomeName">User</span>!</h1>
+        <p>You are successfully logged in. Your voice matters, and we're here to help resolve your concerns.</p>
+    </div>
+
+    <div class="welcome-icon">
+        <i class="fas fa-circle-check"></i>
+    </div>
+</section>
+       
+        <section class="dashboard-image">
+    <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+        alt="Team collaborating to resolve concerns">
+    <div class="dashboard-image-text">
+        <h2>Every concern deserves a solution.</h2>
+        <p>Stay connected. Stay informed. Track your progress.</p>
+    </div>
+</section>
+       <section class="dashboard-stats">
+    <article class="stat-card">
+        <span>Total Complaints</span>
+        <h2 id="totalComplaints">0</h2>
+        <p>Complaints submitted</p>
+    </article>
+
+    <article class="stat-card">
+        <span>Under Review</span>
+        <h2 id="pendingComplaints">0</h2>
+        <p>Currently being reviewed</p>
+    </article>
+
+    <article class="stat-card">
+        <span>Resolved</span>
+        <h2 id="resolvedComplaints">0</h2>
+        <p>Successfully resolved</p>
+    </article>
+</section>
+
+        <section class="dashboard-actions">
+            <h2>What would you like to do?</h2>
+
+            <div class="action-grid">
+                <a href="/complaints/new" class="action-card">
+                    <span class="action-icon">＋</span>
+                    <h3>Submit a Complaint</h3>
+                    <p>Share your concern with the appropriate team.</p>
+                    <span class="action-link">Submit now →</span>
+                </a>
+
+                <a href="/my-complaints" class="action-card">
+                    <span class="action-icon">↗</span>
+                    <h3>Track Complaints</h3>
+                    <p>Check the progress of your submitted complaints.</p>
+                    <span class="action-link">View complaints →</span>
+                </a>
+
+                <a href="/profile" class="action-card">
+                    <span class="action-icon">◎</span>
+                    <h3>My Profile</h3>
+                    <p>View your registered account information.</p>
+                    <span class="action-link">View profile →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="dashboard-note">
+            <h3>Your voice matters.</h3>
+            <p>Harika Resolve is committed to making complaint reporting transparent, organized and accessible.</p>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        © 2026 Harika Resolve. All Rights Reserved.
+    </footer>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
